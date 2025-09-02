@@ -1,0 +1,19 @@
+fset indays() realday() - today()
+
+REM 1 MSG %x Newsletter + web (%w %m %d)
+
+REM First Sun -5 MSG %x EMAIL: First Sunday first notice (%w %m %d)
+REM First Sun -1 MSG %x EMAIL: First Sunday second notice (%w %m %d)
+REM First Sun MSG %x First Sunday (%w %m %d)
+REM First Sun SATISFY 1
+REM [trigdate()+1] MSG %x REMOVE First Sunday (%w %m %d)
+
+REM First Thu -1 MSG %x EMAIL: Happy Hour reminder (%w %m %d)
+REM First Thu MSG %x Happy Hour (%w %m %d)
+REM First Thu SATISFY 1
+REM [trigdate()+1] MSG %x REMOVE Happy Hour (%w %m %d)
+
+REM Third Wed -1 MSG %x EMAIL: Social reminder (%w %m %d)
+REM Third Wed MSG %x Social (%w %m %d)
+REM Third Wed SATISFY 1
+REM [trigdate()+1] MSG %x REMOVE Social (%w %m %d)
