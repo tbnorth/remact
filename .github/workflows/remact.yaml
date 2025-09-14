@@ -29,7 +29,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Test email
-    - name: Send mail
       uses: dawidd6/action-send-mail@v6
       # env:
         # Optional http proxy:
